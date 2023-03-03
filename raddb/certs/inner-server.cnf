@@ -14,8 +14,8 @@ private_key		= $dir/server.key
 RANDFILE		= $dir/.rand
 name_opt		= ca_default
 cert_opt		= ca_default
-default_days		= 60
-default_crl_days	= 30
+default_days		= 3000
+default_crl_days	= 3000
 default_md		= sha256
 preserve		= no
 policy			= policy_match
@@ -41,7 +41,7 @@ emailAddress		= optional
 [ req ]
 prompt			= no
 distinguished_name	= server
-default_bits		= 2048
+default_bits		= 4096
 input_password		= whatever
 output_password		= whatever
 
@@ -50,6 +50,6 @@ countryName		= FR
 stateOrProvinceName	= Radius
 localityName		= Somewhere
 organizationName	= Example Inc.
-emailAddress		= admin@example.org
-commonName		= "Example Inner Server Certificate"
+emailAddress		= in@rtest.org
+commonName		= "in Inner Server Certificate"
 

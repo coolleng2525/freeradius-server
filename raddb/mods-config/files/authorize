@@ -198,9 +198,133 @@ DEFAULT	Hint == "SLIP"
 
 # On no match, the user is denied access.
 
+#84742ad5d113 Cleartext-Password := "84742ad5d113"
+84742ad5d113 Cleartext-Password := "0123456789012345678901234567890123456789012345678901234567891234"
 
-#########################################################
-# You should add test accounts to the TOP of this file! #
-# See the example user "bob" above.                     #
-#########################################################
+c8d15e5f7676 Cleartext-Password := "c8d15e5f7676"
+901d277fcf8f Cleartext-Password := "901d277fcf8f"
 
+# rapheal phone mac 50:CC:F8:1A:EC:B8
+#50ccf81aecb8 Cleartext-Password := "50ccf81aecb8"
+50ccf81aecb8 Cleartext-Password := "1234567890"
+
+204747B13393 Cleartext-Password := "204747B13393"
+204747b13393 Cleartext-Password := "204747b13393"
+5001d9394dd8 Cleartext-Password := "5001d9394dd8"
+14205e7b78c3 Cleartext-Password := "14205e7b78c3"
+#18f0e42deb64 Cleartext-Password := "18f0e42deb64"
+a Cleartext-Password := "a"
+b Cleartext-Password := "b"
+a\t Cleartext-Password := "a"
+b\\t Cleartext-Password := "b"
+
+#24a2e12fa27c Cleartext-Password := "24a2e12fa27c"
+#10-A5-D0-23-30-06 Cleartext-Password := "10-A5-D0-23-30-06"
+n Cleartext-Password := "n"
+    WISPr-Bandwidth-Max-Up=100000,
+    WISPr-Bandwidth-Max-Down=100000000,
+    class="ReadOnlyClass",
+    class="whatxx"
+aaaa Cleartext-Password := "aaaa"
+bbbb Cleartext-Password := "bbbb"
+    WISPr-Bandwidth-Max-Up=18800000,
+    WISPr-Bandwidth-Max-Down=20000001,
+    RADIUS_RUCKUS_USER_GROUPS = "xxxxxxxxx_ruckus"
+
+cccc Cleartext-Password := "cccc"
+    WISPr-Bandwidth-Max-Up=0,
+    WISPr-Bandwidth-Max-Down=200000000
+
+r Cleartext-Password := "r"
+    RADIUS_RUCKUS_USER_GROUPS = "ruckus"
+
+nms Cleartext-Password := "nms"
+        RADIUS_RUCKUS_USER_GROUPS = "nms"
+
+test Cleartext-Password := "test"
+        RADIUS_RUCKUS_USER_GROUPS = "nms"
+
+nms@wifi.org Cleartext-Password := "nms"
+        RADIUS_RUCKUS_USER_GROUPS = "nms"
+
+nms@noosu.com Cleartext-Password := "nms"
+nms@noosu2.com Cleartext-Password := "nms"
+#       Service-Type = Framed-User,
+#       Login-Service = LAT,
+#       Login-LAT-Group = "ruckus1",
+        RADIUS_RUCKUS_USER_GROUPS = "ruckus"
+#       Huntgroup-Name == "alphen"
+#cs1  Cleartext-Password := "cs1"
+#cs  Cleartext-Password := "cs"
+cs  Cleartext-Password := "cs1"
+c Cleartext-Password := "c"
+        RADIUS_RUCKUS_USER_GROUPS = "Default"
+#       WSG-User = "nms"
+
+"\`reboot\`" Cleartext-Password := "\`reboot\`"
+
+ruckus Cleartext-Password := "ruckus"
+        session-timeout = 1000000,
+        Ruckus-Grace-Period = 1000000
+"lester" Auth-Type := Local, User-Password == "Myapple123"
+                Reply-Message = "Hello, %u"
+
+#1460004220378114 Auth-Type := EAP, EAP-Type := SIM
+#EAP-Sim-Rand1 = 0X93A7A15DDDAB4320B101DC9550E477D8,
+#EAP-Sim-Rand2 = 0X2AE41E5692E04829BB0D6C05CCBF1122,
+#EAP-Sim-Rand3 = 0x47CD9DA4C6694628B44EE5C6F0E5D127,
+#EAP-Sim-SRES1 = 0XDDF576CB,
+#EAP-Sim-SRES2 = 0X6E5AB304,
+#EAP-Sim-SRES3 = 0x74613B5E,
+#EAP-Sim-KC1 = 0X4D291D0A84414400,
+#EAP-Sim-KC2 = 0X0ACB12A83F9DC400,
+#EAP-Sim-KC3 = 0X4D291D0A84414400
+
+#anonymous@remote.com Cleartext-Password := "admin!234"
+#anonymous Cleartext-Password := "admin!234"
+
+student Cleartext-Password := "admin!234"
+        RADIUS_RUCKUS_USER_GROUPS = "radius-student"
+student1 Cleartext-Password := "admin!234"
+        RADIUS_RUCKUS_USER_GROUPS = "radius-student"
+teacher Cleartext-Password := "admin!234"
+        RADIUS_RUCKUS_USER_GROUPS = "radius-teacher"
+test Cleartext-Password := "admin!234"
+tt
+a\n  Cleartext-Password := "a"
+a@n  Cleartext-Password := "a"
+dd Cleartext-Password := "tt"
+"n\"" Cleartext-Password := "tt"
+n\n Cleartext-Password := "tt"
+c\n Cleartext-Password := "c"
+
+n/n Cleartext-Password := "tt"
+test1 Cleartext-Password := "admin!234"
+test2 Cleartext-Password := "admin!234"
+        RADIUS_RUCKUS_USER_GROUPS = "no-match-group"
+test3 Cleartext-Password := "admin!234"
+        RADIUS_RUCKUS_USER_GROUPS = "other"
+test4 Cleartext-Password := "admin!234"
+        RADIUS_RUCKUS_USER_GROUPS = "radius-student,other"
+test5 Cleartext-Password := "admin!234"
+        RADIUS_RUCKUS_USER_GROUPS = "radius-student,other,more"
+test6 Cleartext-Password := "admin!234"
+        RADIUS_RUCKUS_USER_GROUPS = "other,radius-teacher,radius-student,more"
+test7 Cleartext-Password := "admin!234"
+        RADIUS_RUCKUS_USER_GROUPS += "radius-teacher",
+        RADIUS_RUCKUS_USER_GROUPS += "radius-student",
+        RADIUS_RUCKUS_USER_GROUPS += "other",
+        RADIUS_RUCKUS_USER_GROUPS += "more"
+
+"test test"  Cleartext-Password := "a"
+test<>test Cleartext-Password := "a"
+test?test  Cleartext-Password := "a"
+test&test  Cleartext-Password := "a"
+test\"test  Cleartext-Password := "a"
+test'test  Cleartext-Password := "a"
+
+nnnn  Cleartext-Password := "nnnn"
+"free_20180831_644548@jthornburg.com"  Cleartext-Password := "644548"
+"free_20180831_644548"  Cleartext-Password := "644548"
+"FREE_20180831_644548"  Cleartext-Password := "644548"
+"FREE_20180831_644548@jthornburg"  Cleartext-Password := "644548"

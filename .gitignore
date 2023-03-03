@@ -72,3 +72,5 @@ warnings.txt
 
 # rpm packages
 rpmbuild/
+conf/radd.bak
+conf/radd

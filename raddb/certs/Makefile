@@ -9,7 +9,7 @@
 #
 ######################################################################
 
-DH_KEY_SIZE	= 2048
+DH_KEY_SIZE	= 4096
 OPENSSL		= openssl
 EXTERNAL_CA	= $(wildcard external_ca.*)
 

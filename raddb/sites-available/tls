@@ -402,7 +402,7 @@ listen {
 		#
 		#  Require a client certificate.
 		#
-		require_client_cert = yes
+		#require_client_cert = yes
 
 		#
 		#  As of version 2.1.10, client certificates can be
@@ -459,8 +459,8 @@ listen {
 }
 
 clients radsec {
-	client 127.0.0.1 {
-		ipaddr = 127.0.0.1
+	client 10.223.0.0 {
+		ipaddr = 10.223.0.0/16
 
 		#
 		#  Ensure that this client is TLS *only*.
