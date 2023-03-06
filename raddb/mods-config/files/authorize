@@ -328,3 +328,12 @@ nnnn  Cleartext-Password := "nnnn"
 "free_20180831_644548"  Cleartext-Password := "644548"
 "FREE_20180831_644548"  Cleartext-Password := "644548"
 "FREE_20180831_644548@jthornburg"  Cleartext-Password := "644548"
+
+# add for mac auth
+
+8caaceaa6bc4 Cleartext-Password := "8caaceaa6bc4"
+24a2e12fa27c Cleartext-Password := "24a2e12fa27c"
+#74:8f:3c:be:77:0b macbookpro
+748f3cbe770b Cleartext-Password := "748f3cbe770b"
+#00:c0:ca:98:d5:af
+00c0ca98d5af Cleartext-Password := "00c0ca98d5af"
