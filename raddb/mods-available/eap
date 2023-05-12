@@ -537,6 +537,7 @@ eap {
 		#
 		#  You probably also want "use_tunneled_reply = yes"
 		#  when using fast session resumption.
+		use_tunneled_reply=yes
 		#
 		#  You can check if a session has been resumed by
 		#  looking for the existence of the EAP-Session-Resumed
@@ -865,7 +866,7 @@ eap {
 		#
 		#  allowed values: {no, yes}
 		#
-		use_tunneled_reply = no
+		use_tunneled_reply = yes
 
 		#  The inner tunneled request can be sent
 		#  through a virtual server constructed
@@ -974,7 +975,7 @@ eap {
 		#  sections of sites-available/default, and of
 		#  sites-available/inner-tunnel
 		#
-		use_tunneled_reply = no
+		use_tunneled_reply = yes
 
 		#  When the tunneled session is proxied, the
 		#  home server may not understand EAP-MSCHAP-V2.

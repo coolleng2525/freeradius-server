@@ -225,6 +225,15 @@ n Cleartext-Password := "n"
     WISPr-Bandwidth-Max-Down=100000000,
     class="ReadOnlyClass",
     class="whatxx"
+
+nx Cleartext-Password := "nx"
+    WISPr-Bandwidth-Max-Up=1000000,
+    WISPr-Bandwidth-Max-Down=1000000000,
+    Acct-Interim-Interval = 180,
+    Tunnel-Type = VLAN,
+    Tunnel-Medium-Type = IEEE-802,
+    Tunnel-Private-Group-ID = 0201
+
 aaaa Cleartext-Password := "aaaa"
 bbbb Cleartext-Password := "bbbb"
     WISPr-Bandwidth-Max-Up=18800000,
