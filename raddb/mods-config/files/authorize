@@ -346,3 +346,12 @@ nnnn  Cleartext-Password := "nnnn"
 748f3cbe770b Cleartext-Password := "748f3cbe770b"
 #00:c0:ca:98:d5:af
 00c0ca98d5af Cleartext-Password := "00c0ca98d5af"
+
+
+204747d42c14 Cleartext-Password := "204747d42c14"
+    MS-MPPE-Recv-Key := 0x098f4eeed45765be7108ed837bb597812108148342e394581a000458c67891ea,
+    User-Name:="dpsk20"
+
+dpsk Cleartext-Password := "dpsk"
+    MS-MPPE-Recv-Key := 0x098f4eeed45765be7108ed837bb597812108148342e394581a000458c67891ea,
+    User-Name:="dpsk20"
