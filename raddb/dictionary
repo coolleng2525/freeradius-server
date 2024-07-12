@@ -47,3 +47,46 @@
 #ATTRIBUTE	My-Local-String		3000	string
 #ATTRIBUTE	My-Local-IPAddr		3001	ipaddr
 #ATTRIBUTE	My-Local-Integer	3002	integer
+#
+#
+VENDOR          Ruckus                          25053
+
+BEGIN-VENDOR    Ruckus
+ATTRIBUTE       RADIUS_RUCKUS_USER_GROUPS       1           string
+ATTRIBUTE       RADIUS_RUCKUS_STA_RSSI                  2           integer
+ATTRIBUTE   RADIUS_RUCKUS_SSID              3       string
+ATTRIBUTE   RADIUS_RUCKUS_WLANID            4       integer
+ATTRIBUTE   RADIUS_RUCKUS_LOCATION          5       string
+ATTRIBUTE   Ruckus-Grace-Period             6       integer
+END-VENDOR  Ruckus
+
+
+
+#enum {
+#     RADIUS_VENDOR_ID_RUCKUS = 25053,
+#     RADIUS_RUCKUS_USER_GROUPS = 1,
+#     RADIUS_RUCKUS_STA_RSSI = 2,
+#     RADIUS_RUCKUS_SSID = 3,
+#     RADIUS_RUCKUS_WLANID = 4,
+#     RADIUS_RUCKUS_LOCATION = 5,
+#     RADIUS_RUCKUS_GRACE_PERIOD = 6,
+#     RADIUS_RUCKUS_SCG_CBLADE_IP = 7,
+#     RADIUS_RUCKUS_SCG_DBLADE_IP = 8,
+#     RADIUS_RUCKUS_STA_VLANID = 9,
+#     RADIUS_RUCKUS_EXPIRATION = 10,
+#     RADIUS_RUCKUS_STA_UUID = 11,
+#     RADIUS_RUCKUS_ACCEPT_ENHANCEMENT_REASON = 12,
+#     RADIUS_RUCKUS_STA_INNER_ID = 13,
+#     RADIUS_RUCKUS_SESSION_TYPE = 125,
+#     RADIUS_RUCKUS_ACCT_STATUS = 126
+# };
+
+#ATTRIBUTE      Huawei-Subnet-Mask                      72      ipaddr
+#ATTRIBUTE      Huawei-Application-Scene                221     octets
+
+#
+# Integer translations
+#
+
+#END-VENDOR     Ruckus
+
